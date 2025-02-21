@@ -13,9 +13,9 @@
     data() {
       return {
         links: [
-          { path: "/", text: "Home" },
-          { path: "/about", text: "About" },  
-          { path: "/contact", text: "Contact" },
+        //   { path: "/", text: "Home" },
+        //   { path: "/about", text: "About" },  
+        //   { path: "/contact", text: "Contact" },
           { path: "/login", text: "Login" },
         ],
       };
