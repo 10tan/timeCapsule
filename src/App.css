@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+}
+.app{
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.app__header{
+  object-fit: contain;
+  background-color: aqua;
+  padding: 20px;
+  border-bottom: 1px solid lightgreen;
+}
