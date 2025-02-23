@@ -34,15 +34,9 @@ node server.js
 timeCapsule2.0/
 ```sh
 │── backend/             # Backend files (Node.js + Express)
-│   ├── node_modules/    # Installed dependencies
-│   ├── public/          # Default assets
-│   ├── src/             # Routes, controllers, models
-│   ├── .env             # Environment variables (not committed)
-│── frontend/            # Frontend React app
+│── node_modules/    # Installed dependencies
 │── src/             # React components, pages
 │── public/          # Static assets
-│── node_modules/    # Installed dependencies
-│── .gitignore           # Files to ignore in version control
 │── README.md            # Project documentation
 ```
 
