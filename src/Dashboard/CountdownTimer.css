@@ -1,0 +1,12 @@
+.timer {
+    font-family: 'Digital-7', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  

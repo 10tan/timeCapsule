@@ -1,0 +1,208 @@
+General Page Styling
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Profile Container - Centered */
+/* Profile Container - Reduced Width */
+.profile-container {
+    width: 80%; /* Reduced from 90% */
+    max-width: 600px; /* Reduced from 800px */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+}
+
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps elements aligned */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Profile Info */
+.profile-info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and info */
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    margin: 5px 0;
+    justify-content: center;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Filter Icon */
+.filter-wrapper {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.filter-icon {
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.filter-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Filter Menu */
+.filter-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 150px;
+    text-align: left;
+    z-index: 100;
+}
+
+.filter-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-menu ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.filter-menu ul li:hover {
+    background: #f0f0f0;
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Post Container */
+.post-container {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Image */
+.post-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.post-image:hover {
+    transform: scale(1.05);
+}
+
+/* Three-dot Menu */
+.post-menu {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.menu-icon {
+    color: white;
+}
+
+/* Post Dropdown */
+.post-dropdown {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    z-index: 10;
+}
+
+.post-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-dropdown ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.post-dropdown ul li:hover {
+    background: #f0f0f0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        max-width: 90%;
+    }
+
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .posts-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
