@@ -10,17 +10,17 @@ TimeCapsule 2.0 is a **React-based web application** that allows users to **uplo
 - **Database:** MongoDB (MongoDB Atlas)  
 - **Authentication:** JSON Web Token (JWT)  
 - **Email Service:** Postmark  
-- **File Upload:** Multer  
+- **File Upload:** Cloudinary  
 
 ---
 
 ## 🛠️ How to Run the Project
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/10tan/TimeCapsule2.0.git
-cd TimeCapsule2.0
+git clone https://github.com/10tan/timeCapsule2.0.git
+cd timeCapsule2.0
 ```
-###2️⃣ Run the Application
+### 2️⃣ Run the Application
 Start the frontend
 ```sh
 npm start
@@ -30,8 +30,9 @@ For the backend
 cd backend
 node server.js
 ```
-###📂 Project Structure
-TimeCapsule2.0/
+### 📂 Project Structure
+timeCapsule2.0/
+```sh
 │── backend/             # Backend files (Node.js + Express)
 │   ├── node_modules/    # Installed dependencies
 │   ├── public/          # Default assets
@@ -43,4 +44,4 @@ TimeCapsule2.0/
 │── node_modules/    # Installed dependencies
 │── .gitignore           # Files to ignore in version control
 │── README.md            # Project documentation
-
+```
